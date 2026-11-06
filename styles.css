@@ -110,3 +110,14 @@ h2 { font-size: clamp(26px, 3.4vw, 38px); line-height: 1.15; margin-bottom: 18px
 .mail:hover { color: var(--accent); text-decoration: none; }
 .foot { border-top: 1px solid var(--border); margin-top: clamp(56px, 8vw, 96px); }
 .foot-in { max-width: 1160px; margin: 0 auto; padding: 22px var(--gutter); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--faint); }
+
+/* A história */
+.story { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--border); }
+.story .chapter { display: grid; gap: 8px; padding: 30px 0; border-bottom: 1px solid var(--border); }
+@media (min-width: 820px) { .story .chapter { grid-template-columns: 170px minmax(0, 1fr); gap: 44px; } }
+.story .when { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); padding-top: 5px; }
+.story h3 { font-size: clamp(20px, 2.3vw, 26px); line-height: 1.25; margin-bottom: 12px; max-width: 36ch; }
+.story p { color: var(--muted); max-width: 66ch; margin: 0 0 12px; }
+.story .value { color: var(--text); font-weight: 600; margin: 4px 0 0; display: flex; gap: 10px; }
+.story .value::before { content: "→"; color: var(--green); }
+.story .is-now h3 { color: var(--accent); }
